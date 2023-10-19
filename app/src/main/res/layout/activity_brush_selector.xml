@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.fingerpainter.viewModels.BrushViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".views.BrushActivity">
+
+        <Button
+            android:id="@+id/squareButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{()->viewModel.setShapeSquare()}"
+            android:text="@string/square"
+            app:layout_constraintBaseline_toBaselineOf="@+id/roundButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/roundButton" />
+
+        <Button
+            android:id="@+id/roundButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:onClick="@{()->viewModel.setShapeRound()}"
+            android:text="@string/round"
+            app:layout_constraintBottom_toTopOf="@+id/brushSizeView"
+            app:layout_constraintEnd_toStartOf="@+id/squareButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/brushShapeView" />
+
+        <SeekBar
+            android:id="@+id/brushSizeSeekBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:max="200"
+            android:progress="@{viewModel.size}"
+            app:layout_constraintBottom_toTopOf="@+id/brushOKButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/brushSizeView" />
+
+        <TextView
+            android:id="@+id/brushShapeView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="4dp"
+            android:text="@{viewModel.getShapeString()}"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/roundButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/brushSizeView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:text="@{viewModel.getSizeString()}"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/brushSizeSeekBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/roundButton" />
+
+        <Button
+            android:id="@+id/brushOKButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
+            android:onClick="onOKButtonClick"
+            android:text="@string/ok"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/brushSizeSeekBar" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

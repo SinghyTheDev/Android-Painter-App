@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">FingerPainter</string>
+    <string name="brush">BRUSH</string>
+    <string name="red">RED</string>
+    <string name="green">GREEN</string>
+    <string name="blue">BLUE</string>
+    <string name="orange">ORANGE</string>
+    <string name="current_colour">CURRENT COLOUR</string>
+    <string name="ok">OK</string>
+    <string name="square">SQUARE</string>
+    <string name="textview">TextView</string>
+    <string name="round">ROUND</string>
+    <string name="ok2">OK</string>
+    <string name="current_brush_size">CURRENT BRUSH SIZE</string>
+    <string name="current_brush_shape">CURRENT BRUSH SHAPE</string>
+    <string name="new_colour">NEW COLOUR</string>
+    <string name="black">BLACK</string>
+    <string name="white">WHITE</string>
+    <string name="shape">SHAPE:</string>
+    <string name="size">SIZE:</string>
+    <string name="colour">COLOUR</string>
+    <string name="yellow">YELLOW</string>
+</resources>
