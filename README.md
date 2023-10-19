@@ -1,8 +1,8 @@
 # Android Painter App
 
-Welcome to the Android Painting App! This application provides users with a canvas to express their creativity by painting with different colors and brush sizes and shapes. Users can start with a blank canvas, or draw on images from their gallery. With a user-friendly interface and a range of features, this app makes digital painting easy and enjoyable.
+Welcome to the Android Painter App! This application provides users with a canvas to express their creativity by painting with different colors and brush sizes and shapes. Users can start with a blank canvas, or draw on images from their gallery. With a user-friendly interface and a range of features, this app makes digital painting easy and enjoyable.
 
-This app follows the professional standards, utilizing the Model-View-ViewModel (MVVM) architectural pattern and Data Binding to maintain a clean and efficient codebase.
+This app follows professional standards, utilizing the Model-View-ViewModel (MVVM) architectural pattern and Data Binding to maintain a clean and efficient codebase.
 
 ## Features
 
