@@ -6,20 +6,20 @@ This app follows professional standards for coding Android apps such as the Mode
 
 ## Features
 
-### 1. Painting
+### Painting
 - This is the core feature of the app, where users can paint onto a blank canvas.
 - Users can select from a variety of colors, brush sizes, and shapes to create their artwork.
 
-### 2. Color Selection
+### Color Selection
 - Users may choose from a palette of colors.
 - The recently chosen colors are displayed.
 
-### 3. Brush Selection
+### Brush Selection
 - Users can select the shape and size of their brush.
 - The recently chosen brush shapes and sizes are displayed.
 
-### 4. State Persistence
+### State Persistence
 - The app ensures a seamless painting experience by maintaining its state (such as the selected color and brush settings) when switching between applications (for example when receiving a phone call) or changing device orientation.
 
-### 5. Open and Paint
+### Open and Paint
 - Users can paint on top of existing photos from their gallery, allowing you to add your creative touch to existing images.
