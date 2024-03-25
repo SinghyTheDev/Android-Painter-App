@@ -1,8 +1,8 @@
 # Android Painter App
 
-Welcome to the Android Painter App! This application provides users with a canvas to express their creativity by painting with different colors and brush sizes and shapes. Users can start with a blank canvas, or draw on images from their gallery. With a user-friendly interface and a range of features, this app makes digital painting easy and enjoyable. To draw on an image, navigate to the image on your files, and open with FingerPainter.
+Welcome to the Android Painter App! This application provides users with a canvas to express their creativity with different colors, brush sizes, and shapes. Users can start with either a blank canvas or draw on top of existing images from their gallery. With a user friendly UI and a range of features, this app provides enjoyable digital painting.
 
-This app follows professional standards, utilizing the Model-View-ViewModel (MVVM) architectural pattern and Data Binding to maintain a clean and efficient source code.
+This app follows professional standards for coding Android apps such as the Model-View-ViewModel (MVVM) architectural pattern and Data Binding to maintain a clean and efficient source code.
 
 ## Features
 
@@ -10,17 +10,16 @@ This app follows professional standards, utilizing the Model-View-ViewModel (MVV
 - This is the core feature of the app, where users can paint onto a blank canvas.
 - Users can select from a variety of colors, brush sizes, and shapes to create their artwork.
 
-### 2. Color Selection Activity
-- A second activity is dedicated to color selection, allowing users to choose from a palette of colors.
-- The currently chosen color is displayed within this activity.
+### 2. Color Selection
+- Users may choose from a palette of colors.
+- The recently chosen colors are displayed.
 
-### 3. Brush Selection Activity
-- The third activity is designed for brush customization, where users can select the shape and size of their brush.
-- The currently chosen brush shape and size are displayed in this activity.
+### 3. Brush Selection
+- Users can select the shape and size of their brush.
+- The recently chosen brush shapes and sizes are displayed.
 
 ### 4. State Persistence
-- The app maintains the selected color and brush settings even when the device's orientation changes (e.g., phone rotation).
-- It also preserves the chosen settings when switching to other applications (e.g., receiving a phone call), ensuring a seamless painting experience.
+- The app ensures a seamless painting experience by maintaining its state (such as the selected color and brush settings) when switching between applications (for example when receiving a phone call) or changing device orientation.
 
 ### 5. Open and Paint
-- Users can open images from their device's storage and start painting on top of them. This feature allows users to add their creative touch to existing images.
+- Users can open images from their gallery and paint on top of them, allowing users to add their creative touch to existing images.
